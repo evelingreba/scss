@@ -1,0 +1,183 @@
+.footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 5490px;
+  bottom: 0;
+  height: 40%;
+  min-height: 280px;
+  width: auto;
+
+  background: #0B0D17;
+
+  flex: none;
+  order: 8;
+  flex-grow: 0;
+  margin: 0 0;
+}
+
+.footer_left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+
+  position: absolute;
+  width: 650px;
+  height: 168px;
+  right: 50%;
+  top: 25%;
+
+  @include breakpoint($second-bp) {
+    left: 10px;
+  }
+
+  @include breakpoint($mobile-bp2) {
+    top: 10px;
+  }
+}
+
+.footer_links1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  position: static;
+
+  flex: none;
+  order: 0;
+  align-self: flex-start;
+  flex-grow: 0;
+  margin-bottom: 12px;
+  margin-top: 24px;
+}
+
+.footer_links2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+
+  position: static;
+
+  flex: none;
+  order: 1;
+  align-self: center;
+  flex-grow: 0;
+}
+
+.footer_links_item a {
+  text-decoration: none;
+
+  font-family: $fontFamily;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #FFFFFF;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-right: 24px;
+  margin-left: 0;
+
+  @include breakpoint($tablet-bp3) {
+    font-size: 12px;
+  }
+
+  @include breakpoint($mobile-bp2) {
+    margin-right: 10px;
+  }
+}
+
+.footer_text p{
+  position: static;
+  width: 256px;
+  height: 24px;
+  left: 0;
+  top: calc(50% - 24px/2 + 72px);
+
+  font-family: $fontFamily;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #D9DBE1;
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin: 24px 0;
+}
+
+.footer_right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+
+  position: absolute;
+  width: 160px;
+  height: 140px;
+  left: 75%;
+  top: 25%;
+
+  @include breakpoint($second-bp) {
+    right: 10px;
+    left: auto;
+  }
+
+  @include breakpoint($tablet-bp3) {
+    width: 100px;
+  }
+
+  @include breakpoint($mobile-bp2) {
+    top: 50%;
+    left: 10px;
+  }
+}
+
+.footer_subtitle2 {
+  position: static;
+  width: 160px;
+  height: 28px;
+  left: 0;
+  top: 0;
+
+  font-family: $fontFamily;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+
+  color: #D9DBE1;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 16px 0;
+
+  @include breakpoint($tablet-bp3) {
+    font-size: 14px;
+  }
+
+  @include breakpoint($mobile-bp2) {
+    top: 70%;
+  }
+}
+
+.footer_download_buttons button {
+  margin-bottom: 16px;
+  @include download_buttons;
+}
+
+.footer_logo {
+  @include breakpoint($mobile-bp2) {
+    width: 16px;
+    height: 16px;
+  }
+}
+

@@ -1,0 +1,153 @@
+.getStarted {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+
+  position: absolute;
+  width: 730px;
+  height: 290px;
+  right: 40%;
+  top: 240px;
+  margin-right: 30px;
+
+  @include breakpoint($first-bp) {
+    left: 10px;
+  }
+
+  @include breakpoint($tablet-bp) {
+    width: 487px;
+    height: 130px;
+  }
+
+  @include breakpoint($tablet-bp4) {
+    width: 365px;
+    height: auto;
+  }
+
+  @include breakpoint($mobile-bp) {
+    width: 243px;
+    height: auto;
+  }
+
+  @include breakpoint($mobile-bp2) {
+    top: 100px;
+    left: 130px;
+  }
+
+  @include breakpoint($mobile-bp3) {
+    left: 10px;
+  }
+}
+
+.text {
+  position: static;
+  width: 730px;
+  height: 196px;
+
+  font-family: $fontFamily;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 98px;
+
+  font-feature-settings: 'liga' off;
+
+  color: $textColor;
+
+  flex: none;
+  order: 0;
+  align-self: center;
+  flex-grow: 1;
+  margin: 32px 30px;
+
+  @include breakpoint($tablet-bp) {
+    font-size: 48px;
+    width: 487px;
+    height: 130px;
+    line-height: 65px;
+    margin: 21px 20px;
+  }
+
+  @include breakpoint($tablet-bp4) {
+    font-size: 36px;
+    width: 365px;
+    height: 98px;
+    margin: 21px 0;
+    left: 10px;
+  }
+
+  @include breakpoint($mobile-bp) {
+    font-size: 30px;
+    line-height: 40px;
+    width: 243px;
+    height: 65px;
+    margin: 30px 0;
+    left: 10px;
+  }
+
+  //@include breakpoint($mobile-bp2) {
+    //top: 100px;
+  //}
+}
+
+.button button{
+  position: static;
+  width: 196px;
+  height: 62px;
+  left: 0;
+  top: 228px;
+
+  @include download_buttons;
+
+  flex-grow: 0;
+  margin: 32px 0;
+
+  @include breakpoint($tablet-bp4) {
+    width: 98px;
+    height: 31px;
+  }
+}
+
+.mobile_img img{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+
+  position: absolute;
+  width: 350px;
+  height: 640px;
+  left: 60%;
+  top: 168px;
+
+  @include breakpoint($first-bp) {
+    right: 0;
+    left: auto;
+  }
+
+  @include breakpoint($tablet-bp) {
+    width: 233px;
+    height: 427px;
+  }
+
+  @include breakpoint($tablet-bp4) {
+    width: 175px;
+    height: 320px;
+  }
+
+  @include breakpoint($mobile-bp2) {
+    top: 350px;
+    left: 150px;
+  }
+
+  @include breakpoint($mobile-bp3) {
+    left: 10px;
+  }
+}
+
+.first_page {
+  width: 100%;
+  height: auto;
+  min-height: 896px;
+}

@@ -1,0 +1,113 @@
+.s-feature {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: center;
+  position: absolute;
+  justify-content: center;
+  z-index: 1;
+  padding: 64px 165px;
+
+  order: 3;
+
+  width: 100%;
+  height: auto;
+  min-height: 672px;
+  left: 0;
+  top: 1150px;
+
+  background: $background;
+}
+
+.features_title {
+  width: 540px;
+
+  @include h2;
+
+  top: 0;
+
+  text-align: center;
+  font-feature-settings: 'liga' off;
+
+  color: $textColor;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-bottom: 8px;
+  clear: right;
+}
+
+.features_title p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+
+  @include description_lead_1;
+
+  @include breakpoint($mobile-bp2) {
+    justify-content: center;
+    width: 300px;
+    margin-left: 100px;
+    text-align: center;
+  }
+}
+
+.features_grid {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 64px;
+
+  position: absolute;
+  width: 1110px;
+  height: auto;
+  top: 248px;
+  align-items: center;
+
+  @include breakpoint($fifth-bp) {
+    width: 740px;
+    height: auto;
+  }
+
+  @include breakpoint($tablet-bp3) {
+    width: 555px;
+    height: auto;
+
+    grid-column-gap: 30px;
+    grid-row-gap: 64px;
+  }
+
+  @include breakpoint($mobile-bp) {
+    width: 370px;
+    height: auto;
+  }
+
+  @include breakpoint($mobile-bp3) {
+    grid-template: 1fr 1fr 1fr/ 1fr 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 32px;
+    width: 277px;
+  }
+}
+
+.features_grid_item {
+  display: block;
+  text-align: center;
+}
+
+.features_grid_item img{
+  @include breakpoint($mobile-bp) {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.features_grid_item h5 {
+  @include h5;
+}
+
+.features_grid_item p {
+  @include p;
+}
+

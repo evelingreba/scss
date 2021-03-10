@@ -1,0 +1,33 @@
+.subNav {
+  display: none;
+  width: 140px;
+  background-color: $purple;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  box-shadow: 0 6px 8px rgba(0, 0, 0, .2);
+}
+
+.subNav_link {
+  display: block;
+  padding: 22px;
+  font-family: $fontFamily;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: #18191F;
+  text-decoration: none;
+
+  @include breakpoint($tablet-bp) {
+    padding: 5px;
+  }
+
+  transition: background-color .2s linear;
+
+  &:hover {
+    background-color: darken($purple, 10%);
+    color: #FFFFFF;
+  }
+}

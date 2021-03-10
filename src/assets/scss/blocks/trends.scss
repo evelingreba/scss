@@ -1,0 +1,144 @@
+.s-trends {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 128px;
+
+  position: absolute;
+  width: 100%;
+  height: auto;
+  min-height: 896px;
+  left: 0;
+  top: 4000px;
+
+  background: $background;
+
+  flex: none;
+  order: 6;
+  flex-grow: 0;
+  margin: 0 0;
+
+  @include breakpoint($mobile-bp2) {
+    margin: 10px 10px;
+  }
+}
+
+.s-trends h3 {
+  position: absolute;
+  width: 540px;
+  height: 108px;
+  right: 50%;
+  top: 0;
+  text-align: left;
+
+  @include h3;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 128px 30px;
+
+  @include breakpoint($fourth-bp) {
+    left: 10px;
+    margin: 128px 0;
+  }
+
+  @include breakpoint($fifth-bp) {
+    width: 360px;
+    height: 72px;
+  }
+
+  @include breakpoint($tablet-bp3) {
+    width: 270px;
+  }
+
+  @include breakpoint($mobile-bp) {
+    width: 100%;
+    justify-content: center;
+  }
+
+  @include breakpoint($mobile-bp4) {
+    width: 250px;
+    height: auto;
+    margin-left: 20px;
+  }
+}
+
+.s-trends p {
+  position: relative;
+  width: 540px;
+  height: 96px;
+  left: 50%;
+  top: 6px;
+
+  text-align: left;
+
+  @include description_lead_1;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin-left: 30px;
+
+  @include breakpoint($fourth-bp) {
+    right: 10px;
+    margin: 0;
+  }
+
+  @include breakpoint($tablet-bp2) {
+    width: 360px;
+    height: auto;
+  }
+
+  @include breakpoint($tablet-bp3) {
+    width: 270px;
+    height: auto;
+  }
+
+  @include breakpoint($mobile-bp) {
+    justify-content: center;
+    width: auto;
+    top: 40px;
+    left: 10px;
+    margin-right: 10px;
+  }
+
+  @include breakpoint($mobile-bp4) {
+    width: 250px;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 50px;
+  }
+}
+
+.s-trends img {
+  position: static;
+  width: 1110px;
+  height: 400px;
+  //left: 165px;
+  top: 220px;
+  align-self: center;
+
+  border-radius: 8px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 96px 0;
+
+  @include breakpoint($fifth-bp) {
+    width: 740px;
+    height: 267px;
+  }
+
+  @include breakpoint($tablet-bp3) {
+    width: 555px;
+    height: 200px;
+  }
+
+  @include breakpoint($mobile-bp) {
+    width: 370px;
+    height: auto;
+    margin-right: 10px;
+  }
+}

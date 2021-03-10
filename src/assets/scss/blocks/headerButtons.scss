@@ -1,0 +1,36 @@
+.google_play_button {
+  position: static;
+
+  order: 0;
+
+  @include breakpoint($tablet-bp) {
+    width: 90px;
+    height: 27px;
+  }
+}
+
+.app_store_button {
+  position: static;
+
+  order: 1;
+
+  @include breakpoint($tablet-bp) {
+    width: 90px;
+    height: 27px;
+  }
+}
+
+.header_download_buttons button{
+  margin-top: 16px;
+  margin-right: 12px;
+  @include download_buttons;
+
+  @include breakpoint($tablet-bp) {
+    margin-top: 8px;
+    margin-right: 0;
+  }
+
+  @include breakpoint($tablet-bp4) {
+    display: none;
+  }
+}
